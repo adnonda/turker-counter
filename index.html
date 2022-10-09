@@ -1,80 +1,45 @@
-<!DOCTYPE html>
-<html lang="">
 <head>
-  <meta charset="utf-8">
-  <title>itsme</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
-  <link rel="stylesheet" href="https://use.typekit.net/vpn0wxn.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- <script src="./addons/p5.sound.js"></script> -->
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300' rel='stylesheet' type='text/css'>
+    <title>Groupe</title>
 </head>
 <body>
+    <div class="stop-text-block">
+        <h1 id="stop-text"> </h1>
+    </div>
+    <div class="wrapper">
+        <div class="containers">
+            <div class="Numbers">
+                <h1 id="hours" class="indicators">00</h1>
+                <p>Hours</p>
+            </div>
+            <canvas id="mycanvas5" width="370" height="370"> </canvas>
+            <canvas id="mycanvas6" width="370" height="370"> </canvas>
+        </div>
 
-    <!-- AUTO TYPE INIZIALE -->
-  <div class="text">I am Letizia and <span class="type"></span></div>
-
-  <script>var typed = new Typed('.type', {
-
-    strings: ['my friends call me ago', 'I do enjoy eating piadina all together', 'I think that design is humanity’s best friend',
-    'the sea is my cup of tea', 'you will always find me with a camera in my hands', 'trivial is my favourite boardgame','you should watch "abstract" on netflix',
-    'the best stories always start with a yes','when i dont like something my left eyebrow will talk for me','I just get enthusiast for way too many things', ' NON metaphorically speaking I have lost a lot of trains','I have been trying to learn the guitar for seven years',
-    'designing things makes me happy' ,'I lose many things but they usually find a way to come back', 'oki sato inspired my idea of design','it might be that I am a little stubborn', 'I was designed in Rimini', 'martiii, can you lend me some clothes?','when it rains it pours', 'sun is shining and so are you',],
-    typeSpeed:60,
-    backSpeed:90,
-    Loop:true,
-  
-    
-    
-
-  });</script>
-
-
-  <div id="rectangle"></div>
-
-
-    <!-- BLOCCO TESTO -->
-      
-  <div id="Textintro0"> Hi! I’m Letizia Agosta, a 
-    <span class="lista">
-      <li id="connections">c</li>
-      <li id="connections">o</li>
-      <li id="connections">m</li>
-      <li id="connections">m</li>
-      <li id="connections">u</li>
-      <li id="connections">n</li>
-      <li id="connections">i</li>
-      <li id="connections">c</li>
-      <li id="connections">a</li>
-      <li id="connections">t</li>
-      <li id="connections">i</li>
-      <li id="connections">o</li>
-      <li id="connections">n</li>
-    </span>
-  </div>
-      <br> <div id="Textintro"><u> <span id=sotto>designer</span></u> who likes to get her hands in the pie. <br><br>
-        Nowadays it seems to me that all the world is <br>
-        <u><span id=sotto>a visual matter</span></u> in which each of us has a <u><span id=sotto>cultural sight.</span></u> 
-        My projects deal with branding, interaction design, 
-        editorial and data visualization and  they are trying <u><span id=sotto>to share
-        meanings</span></u> touching that cultural sight. 
-        <br><br>
-  </div>
-
-  <div id="Textintro2">
-      Don't be shy say hi <b><a href="mailto:agosta.letizia@libero.it"id="m1">here!</a></b><br>
-      Or you can always leave me a drawing <b><a href="delivery/Drawing code/index.html"id="painttool">here!</a></b>
-  </div>
-
-  <footer>
-    <a href ="https://www.instagram.com/letiziaaaago/" id="b1"> Instagram</a> 
-    <a href="https://www.linkedin.com/in/letizia-agosta-873663199/"id="b2">Linkedin</a> 
-    <a href="PAINT/ARCHIVIO/archivioindex.html" id="b3">archive</a>
-    <!-- <span class= contenitore><a href="PAINT/ARCHIVIO/archivioindex.html"id="b3">archive</a></span> -->
-  </footer>
+        <div class="containers">
+            <div class="Numbers">
+                <h1 id="minutes" class="indicators">00</h1>
+                <p>Minutes</p>
+            </div>
+            <canvas id="mycanvas3" width="370" height="370"> </canvas>
+            <canvas id="mycanvas4" width="370" height="370"> </canvas>
+        </div>
+        
+        <div class="containers">
+            <div class="Numbers">
+                <h1 id="seconds" class="indicators">00</h1>
+                <p>Seconds</p>
+            </div>
+            <canvas id="mycanvas" width="370" height="370"> </canvas>
+            <canvas id="mycanvas2" width="370" height="370"> </canvas>
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="btn" class=" animated tada">Start</button>
+        <button id="btn2" disabled>Pause</button>
+        <button id="btn3" disabled>Stop</button>
+    </div>
+    <script src="script.js"></script>
 </body>
-</html>
-
