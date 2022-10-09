@@ -1,0 +1,89 @@
+
+@media only screen and (max-width: 1780px) {
+    /* #Textintro {font-size: 46px} */
+    /* #Textintro2 {font-size: 32px} */
+}
+
+@media only screen and (max-width: 1460px) {
+    /* #Textintro {font-size: 44px} */
+    /* #Textintro2 {font-size: 30px} */
+}
+
+@media only screen and (max-width: 1400px) {
+    .text {font-size: 20px; margin-top: -1vh;}
+    /* #Textintro {font-size: 42px} */
+    /* #Textintro2 {font-size: 28px} */
+}
+
+@media only screen and (max-width: 1234px) {
+    /* #Textintro {font-size: 36px} */
+    /* #Textintro2 {font-size: 20px} */
+}
+
+@media only screen and (max-width: 1200px) {
+    .text {font-size: 20px;}
+    /* #Textintro {font-size: 32px} */
+    /* #Textintro2 {font-size: 22px} */
+}
+
+@media only screen and (max-width: 930px) {
+    .text {font-size: 14px; margin-top: -3vh;}
+    /* #Textintro {font-size: 22px} */
+    /* #Textintro2 {font-size: 18px} */
+}
+
+@media only screen and (max-width: 800px) {
+    #lista{font-size: 22px; margin-top: 6vh}
+    #Textintro0{font-size: 22px; margin-top: 14vh}
+
+    #Textintro {font-size: 22px}
+    #Textintro2 {font-size: 18px;}
+    
+    footer{
+        margin-top: -18vh;
+    }
+  
+
+  
+}
+
+@media only screen and (max-width: 680px) {
+    #b3 {
+        width: 80px;
+        border-radius: 20px;
+        height: 25px;
+        font-size: 23px;
+        margin-top: 0vw;
+        left: -26.7vw;
+    }
+    /* footer */
+    footer{
+        position: static;
+    }
+    #lista{ margin-top: 6vh}
+    #Textintro0{font-size: 20px; margin-top: 8.5vh}
+  
+
+}
+
+@media only screen and (max-width: 568px) {
+    footer {
+        height: fit-content;
+        flex-direction: column;
+        align-items: flex-start;
+       
+    }
+    #Textintro0{font-size: 20px;}
+
+    #Textintro {font-size: 20px}
+    #Textintro2 {font-size: 16px;margin-bottom: 20vh;}
+
+    #b1, #b2 {margin-top: 10px;}
+    #b3 {position: relative;
+    margin-top: 2vw;
+    left: 0.2vw;
+    margin-left: 0px;}
+
+    
+}
+

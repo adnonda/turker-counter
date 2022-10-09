@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Gustavo' ;
+  src: url(font/comune.otf);
+}
+
+
+
+
+body {
+ margin:0;
+ 
+
+}
+
+canvas {
+  cursor: url(IMG/faccina.png),auto;
+}
+
+
+
+ /*-----------------------------------------------------------> BUTTONS*/ 
+
+
+
+
+#UNO {
+ position: absolute;
+ bottom: 3vh;
+ left: 7vw;
+ text-align: center;
+ height: 1.2vh;
+ width: 14vw;
+ background-color: #f7f0e6;
+ border: black;
+ font-family: 'Gustavo';
+ border-radius: 4vw;
+ border-color: black;
+ border:solid;
+ border-width: 0.12vw;
+ font-size: 1.6vw;
+ cursor: pointer;
+ 
+
+}
+#UNO:hover {
+ background-color: white;
+}
+#doitagainn {
+ position: absolute;
+ bottom: 3vh;
+ left: 16.0vw;
+ height: 1.2vh;
+ width: 14vw;
+ background-color: #f7f0e6;
+ border-radius: 2vw;
+ border-color: black;
+ border:solid;
+ border-width: 0.12vw;
+ cursor: pointer;
+ font-family: 'Gustavo';
+ font-size: 1.6vw;
+ 
+ text-align: center;
+}
+#doitagainn:hover {
+ background-color: white;
+}

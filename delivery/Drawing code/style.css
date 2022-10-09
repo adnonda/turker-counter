@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Gustavo' ;
+  src: url(font/comune.otf);
+}
+
+
+
+
+body {
+ margin:0;
+ 
+
+}
+
+canvas {
+  cursor: url(IMG/faccina.png),auto;
+}
+
+
+
+ /*-----------------------------------------------------------> BUTTONS*/ 
+
+
+
+
+#sendittome {
+ position: absolute;
+ bottom: 3vh;
+ left: 3vh;
+ text-align: center;
+ height: 6vh;
+ width: 22vH;
+ background-color: #f7f0e6;
+ border: black;
+ font-family: 'Gustavo';
+ border-radius: 4vh;
+ border-color: black;
+ border:solid;
+ border-width: 0.12vh;
+ color: black;
+ font-size: 2.6vh;
+ cursor: pointer;
+ 
+
+}
+#sendittome:hover {
+ background-color:white;
+  color:black;
+}
+#doitagain {
+ position: absolute;
+ bottom: 3vh;
+ left: 26.5vh;
+ height: 6vh;
+ width: 22vh;
+ background-color: #f7f0e6;
+ border-radius: 4vh;
+ border-color: black;
+ border:solid;
+ border-width: 0.12vh;
+ cursor: pointer;
+ font-family: 'Gustavo';
+ font-size: 2.6vh;
+ color:black;
+ text-align: center;
+}
+#doitagain:hover {
+ background-color: white;
+  color:black;   }
+
+ 
+  
+  @media only screen and (max-width: 550px) {
+     #sendittome{
+     
+        position: absolute;
+        bottom: 3vh;
+        left: 3vh;
+        text-align: center;
+        height: 5vh;
+        width: 19vH;
+        background-color: #f7f0e6;
+        border: black;
+        font-family: 'Gustavo';
+        border-radius: 4vh;
+        border-color: black;
+        border:solid;
+        border-width: 0.12vh;
+        color: black;
+        font-size: 2.2vh;
+        cursor: pointer;
+        
+       }    
+      }
+      @media only screen and (max-width: 550px) {
+        #doitagain{
+      
+        position: absolute;
+        bottom: 3vh;
+        left: 24.5vh;
+        height: 5vh;
+        width: 18vh;
+        background-color: #f7f0e6;
+        border-radius: 4vh;
+        border-color: black;
+        border:solid;
+        border-width: 0.12vh;
+        cursor: pointer;
+        font-family: 'Gustavo';
+        font-size: 2.1vh;
+        color:black;
+        text-align: center;
+       }
+     
+    
+        }
+   

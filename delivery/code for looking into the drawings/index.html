@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+          import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
+          import { getDatabase,ref,set,onValue,child ,get} from "https://www.gstatic.com/firebasejs/9.9.4/firebase-database.js";
+
+          const firebaseConfig = {
+            apiKey: "AIzaSyC-njk6Xwi-KnobcOpt1qY4Ea8qBSxhpXU",
+            authDomain: "collectdrawings-f6fbb.firebaseapp.com",
+            projectId: "collectdrawings-f6fbb",
+            storageBucket: "collectdrawings-f6fbb.appspot.com",
+            messagingSenderId: "290963494043",
+            appId: "1:290963494043:web:7108064bffa8a36aba223e",
+            measurementId: "G-SD5R8BE257",
+            databaseURL: "https://collectdrawings-f6fbb-default-rtdb.firebaseio.com/"
+          };
+
+          const app = initializeApp(firebaseConfig);
+          const database = getDatabase(app);
+             const dbRef = ref(getDatabase());
+        get(child(dbRef, `names/`)).then((snapshot) => {
+          if (snapshot.exists()) {
+            names=snapshot.val();
+            //console.log(names);
+          } else {
+            console.log("No data available");
+          }
+        }).catch((error) => {
+          console.error(error);
+        });
+
+
+
+           setTimeout(function(){
+           //console.log(names);
+           for(let i=0;i<names.length;i++){
+           let h,w;let size=[];
+             let n="sketches/"+names[i]+"/drawing";
+             get(child(dbRef, n)).then((snapshot) => {
+          if (snapshot.exists()) {
+            drawings.push(snapshot.val());
+          } else {
+            console.log("No data available");
+          }
+        }).catch((error) => {
+          console.error(error);
+        });
+          let k="sketches/"+names[i]+"/width";
+             get(child(dbRef, k)).then((snapshot) => {
+          if (snapshot.exists()) {
+            w=snapshot.val();
+            size.push(w);
+            //console.log(w);
+          } else {
+            console.log("No data available");
+          }
+        }).catch((error) => {
+          console.error(error);
+        });
+          let m="sketches/"+names[i]+"/height";
+        get(child(dbRef, m)).then((snapshot) => {
+          if (snapshot.exists()) {
+            h=snapshot.val();
+            size.push(h);
+            //console.log(h);
+          } else {
+            console.log("No data available");
+          }
+        }).catch((error) => {
+          console.error(error);
+        });
+        
+        setTimeout(function(){sizes.push(size)},1000);
+        //console.log("sizes",sizes);
+           } },2000);
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <main></main>
+    <div id="container"></div>
+    <script src="sketch.js"></script>
+    <p>
+    <ol id="list1">
+      <br>
+    </ol>
+      <ol id="list">
+    </ol>
+    </p>
+  </body>
+</html>

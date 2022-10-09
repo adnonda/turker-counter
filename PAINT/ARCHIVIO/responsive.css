@@ -1,0 +1,311 @@
+#gotowebsite2{
+color:black;
+}
+#gotovideo4{
+color:black;
+}
+[id*='gotovideo'] {
+    color: black;
+}
+@media only screen and (max-width: 1022px) {
+    .underline6 {float: left;}
+}
+
+
+@media only screen and (max-width: 900px) {
+    #gotovideo {margin-left: 52vw;}
+    #gotovideo1 {margin-left: 76vw; margin-top: 5vh;
+    width: 130px;
+    border-radius: 20px;
+    height: 40px;
+    font-size: 16px;}
+    #gotospotify {margin-left: 0.6vw; margin-top: 8vh;
+        width: 130px;
+        border-radius: 20px;
+        height: 40px;
+        font-size: 17px;}
+        #gotovideo2 {margin-left: 6.6vw; margin-top: 3vh;
+            width: 130px;
+            border-radius: 20px;
+            height: 40px;
+            font-size: 16px;}
+            #gotowebsite {margin-left: 7.4vw;
+                margin-top: 2vh;
+                
+                width: 220px;
+                border-radius: 20px;
+                height: 40px;
+                font-size: 16px;}
+                #gotowebsite2 {margin-left: 3.2vw;
+                    margin-top: 2vh;
+                    
+                    width: 220px;
+                    border-radius: 20px;
+                    height: 40px;
+                    font-size: 16px;}
+                    #gotovideo4 {margin-left: 0.2vw;
+                        width: 160px;
+                        border-radius: 20px;
+                        height: 40px;
+                        font-size: 16px;}
+                        
+                    
+}
+
+@media only screen and (max-width: 800px) {
+    #gotovideo {
+        margin-left: 52vw;
+    }
+    .themestext2,.themestext14,.themestext20,.themestext25,.themestext31,.themestext37, .themestext47,.themestext55,.themestext200,.themestext202  {
+        font-size: 6.5vw; }
+
+    #gotovideo1 {
+        margin-left: 7vw;
+        margin-top: 5vh;
+        width: 130px;
+        border-radius: 20px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    #gotospotify {
+        margin-left: 0.4vw;
+        margin-top: 5vh;
+        width: 126px;
+        border-radius: 20px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    #gotovideo2 {
+        margin-left: 6.6vw;
+        margin-top: 3vh;
+        width: 130px;
+        border-radius: 20px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    #gotovideoparte {
+        margin-left: 6.6vw;
+        margin-top: 3vh;
+        width: 130px;
+        border-radius: 20px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    #gotowebsite {
+        margin-left: 7.4vw;
+        margin-top: 2vh;
+
+        width: 220px;
+        border-radius: 20px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .themestext7{
+        padding-right: 5vw;
+    }
+    .themestext11,
+    .themestext41{
+        margin-top: 0px;
+    }
+    .themestext35{
+        top: 2vh;
+    }
+    
+    [class*="content"] [class*="themestext"]:last-of-type,
+    [class*="content"] > div p[class*="themestext"]:last-of-type{
+        padding-right: 5vw;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 570px) {
+    #gotovideo {
+        margin-left: 52vw;
+    }
+    .themestext2,.themestext14,.themestext20,.themestext25,.themestext31,.themestext37, .themestext47,.themestext55,.themestext200,.themestext202  {
+        font-size: 5.5vw; }
+   
+
+    #gotospotify {
+        margin-left: 0.4vw;
+        margin-top: 5vh;
+    }
+
+    #gotovideo2 {
+        margin-left: 6.6vw;
+        margin-top: 3vh;
+    }
+
+    #gotovideoparte {
+        margin-left: 6.6vw;
+        margin-top: 3vh;
+        width: 120px;
+        border-radius: 20px;
+        height: 35x;
+        font-size: 14px;
+    }
+
+    #gotowebsite {
+        margin-left: 7.4vw;
+        margin-top: 2vh;
+
+        width: 220px;
+        border-radius: 20px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    #gotowebsite2 {
+        margin-left: 3.2vw;
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+        width: 200px;
+        border-radius: 20px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    #gotovideo4 {
+        margin-left: 3.2vw;
+        width: 140px;
+        border-radius: 20px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    
+
+    /* setting up images */
+    .img1 {
+        width: 51%;
+        padding-bottom: 10vh;
+    }
+
+    .img4 {
+        padding-top: 0px;
+        width: 46%;
+    }
+
+    .img5 {
+        top: -10vh;
+    }
+
+    .img10 {
+        padding-top: 27vh;
+        padding-bottom: 5vh;
+    }
+    .img30{
+        margin-top: -8vh;
+    }
+    .img73{
+        margin-left: 4vw;
+    }
+
+    .sm-image-width-87 > img {
+        width: 87%;
+    }
+
+    /* fixing text */
+    .sm-text-margin-10 p{
+        margin-right: 10%;
+    }
+        #catTitle {
+    font-size: 92px;
+    bottom: 10%;
+    
+
+     width: 85%;
+    text-align: center;
+            left:3% !important;
+}
+    
+#gotovideo1{
+margin-top: 2vh;
+}
+.themestext4{
+margin-bottom: 6vh;
+}
+.gif4{
+margin-top: 6vh;
+}
+.themestext5{
+margin-top: 6vh;
+margin-bottom: 6vw;
+}
+.themestext3 {
+    top: -37vh;
+}
+.themestext7{
+margin-top: -28vh;
+}
+
+.themestext9{
+margin-top: 2vh;
+}
+
+.img16 {
+margin-top: 5vh;
+}
+
+.themestext2,.themestext14,.themestext20,.themestext25,.themestext31,.themestext37, .themestext47,.themestext55,.themestext200,.themestext202  {
+margin-top: 3vh;
+}
+.img22,.img54,.gifcd {
+    margin-top: 4vh;
+}
+.img24, .img23 {
+    margin-top: 5vh;
+}
+.img25,.img53,.img212,.img214 {
+    margin-top: 6vh;
+}
+.themestext16,.img33, .img55,.themestext11  {
+margin-top: 7vh;
+}
+.img30 {
+    margin-top: -4vh;
+}
+.img35,.img51,.img218,.img31,.themestext13 {
+    margin-top: 9vh;
+}
+.img36 {
+    margin-top: 11vh;
+}
+.themestext19,.img75,.themestext17,.themestext12,.img17,.img14 {
+margin-top: 8vh;
+}
+.themestext54 {
+    margin-top: 13vh;
+}
+.themestext59 {
+    margin-top: 12vh;
+}
+
+
+}
+
+
+@media only screen and (max-width: 508px) {
+    #catTitle {
+        font-size: 92px;
+        /*top: 200px;*/
+    }
+    .pTitle{
+        left: 10vw;
+    }
+}
+
+
+@media only screen and (max-width: 408px) {
+    #catTitle {
+        font-size: 72px;
+        /*top: 150px;*/
+    }
+    #gotovideo2 {margin-left:52.4vw;}
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>p5.js example</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vpn0wxn.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js"></script>
+    <script src="p5.dom.js"></script>
+    <script src="p5.min.js"></script>
+    <!-- <script src="../addons/p5.sound.js"></script> -->
+  </head>
+
+  <body>
+    <script type="module" >
+       // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
+        import { getDatabase,ref,set,onValue,child ,get} from "https://www.gstatic.com/firebasejs/9.9.4/firebase-database.js";
+        
+        const firebaseConfig = {
+          apiKey: "AIzaSyC-njk6Xwi-KnobcOpt1qY4Ea8qBSxhpXU",
+          authDomain: "collectdrawings-f6fbb.firebaseapp.com",
+          projectId: "collectdrawings-f6fbb",
+          storageBucket: "collectdrawings-f6fbb.appspot.com",
+          messagingSenderId: "290963494043",
+          appId: "1:290963494043:web:7108064bffa8a36aba223e",
+          measurementId: "G-SD5R8BE257",
+          databaseURL: "https://collectdrawings-f6fbb-default-rtdb.firebaseio.com/"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+       //here we got our database configured;
+   var sen=document.getElementById("sendittome");
+   sen.addEventListener("click",Save);
+   
+   var rep=document.getElementById("doitagain");
+   rep.addEventListener("click", reset);
+   
+   
+   
+   
+   
+  //set(ref(database, 'names/'), names);
+  function Save(){
+  console.log(drawing);
+  let n= prompt("Enter Your Name");
+  if(n==""){
+    n= "default";
+  }
+  set(ref(database, 'sketches/' + n+userId), {
+  drawing, width: w,height: h
+  });
+  names.push( n+userId);
+  set(ref(database, 'names/'), names);
+  console.log("done");
+  }
+  function reset(){
+    clear=true;
+  }
+      
+    const dbRef = ref(getDatabase());
+get(child(dbRef, `names/`)).then((snapshot) => {
+  if (snapshot.exists()) {
+    names=snapshot.val();
+  } else {
+    console.log("No data available");
+  }
+}).catch((error) => {
+  console.error(error);
+});
+  
+       
+    </script>
+    <script src="sketch.js"></script>
+    <button id="sendittome">send it to me</button>
+    <button id="doitagain">do it again</button>
+  
+  </body>
+</html>
